@@ -79,6 +79,18 @@ namespace MyShop.WebUI.Models
         [Display(Name = "Kennwort bestätigen")]
         [Compare("Password", ErrorMessage = "Das Kennwort entspricht nicht dem Bestätigungskennwort.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        public string FirstName { get; set; }
+        [Required]
+        public string LastName { get; set; }
+        [Required]
+        public string Street { get; set; }
+        [Required]
+        public string City { get; set; }
+        public string State { get; set; }
+        [Required]
+        public string ZIPCode { get; set; }
     }
 
     public class ResetPasswordViewModel
